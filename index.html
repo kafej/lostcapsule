@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LostCapsule is the best time capsule kind service out there.">
+  <meta name="author" content="LostCapsule">
+  <title>LostCapsule</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet"> 
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  
+  <link rel="shortcut icon" href="images/cap_icon.ico">
+</head><!--/head-->
+
+<body id="page-top">
+  <!--.preloader-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.preloader-->
+
+  <!-- First Page slider -->
+  <header id="home" style="background-color: black;">
+    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url(images/slider/1.jpg)">
+          <div class="caption">
+          </div>
+        </div>
+        <div class="item" style="background-image: url(images/slider/3.jpg)">
+          <div class="caption">
+          </div>
+        </div>
+        <div class="item" style="background-image: url(images/slider/4.jpg)">
+          <div class="caption">
+          </div>
+        </div>
+        <div class="item" style="background-image: url(images/slider/5.jpg)">
+          <div class="caption">
+          </div>
+        </div>
+      </div>
+      <!-- First Page Logo -->
+      <div class="home-slider-center">
+        <div class="homeLogo wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="900ms">
+          <div class="homeLogoFirst displayNone">
+            LOST
+          </div>
+          <div class="homeLogoC wow fadeInUp displayNone" data-wow-duration="1000ms" data-wow-delay="1200ms">
+            C
+          </div>
+          <div class="homeLogoSecond displayNone">
+            APSULE
+          </div>
+        </div>
+        <!-- First Page text -->
+        <div class="homeText wow fadeInUp displayNone" data-wow-duration="1000ms" data-wow-delay="620ms">
+          Our systems and robots wander the universe looking for the lostCapsules right now. Estimated time for the opening of the next LostCapsule is:
+        </div>
+        <!-- First Page timer -->
+        <div class="time wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="350ms">
+          <div class="timeDay displayNone"></div>
+          <div class="timeHours displayNone"></div>
+          <div class="timeMin displayNone"></div>
+          <div class="timeSec displayNone"></div>
+        </div>
+        <!-- First Page form -->
+        <div class="home-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="100ms">
+          <input id="home-form" class="form-control" type="text" maxlength="28" placeholder="Name your own Capsule..." required="required">
+        </div>
+        <div class="home-group-button wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <a href="#capsule" class="btn btn-lg btn-primary" id="home-button">Create me !</a>
+        </div>
+      <!-- First Page slider text -->
+        <div class="clear"></div>
+        <div class="slideText wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="320ms">
+           <div id="homeTextSlider1">
+             An unforgettable event ? picture, movie with friends or family ?
+           </div>
+           <div class="displayNone" id="homeTextSlider2">
+             Send anything you want to whoever you want and enjoy those experiences once again.
+           </div>
+           <div class="displayNone" id="homeTextSlider3">
+             You want to leave a letter to yourself, but a few years older ?
+           </div>
+           <div class="displayNone" id="homeTextSlider4">
+             or maybe you just want to leave a movie or letter to your newborn baby ?
+           </div>
+           <div class="displayNone" id="homeTextSlider5">
+             You want to leave someone a message, picture or movie ?
+           </div>
+        </div>
+      </div>
+      <a id="tohash" href="#capsule"><i class="fa fa-angle-down"></i></a>
+    </div><!--/#home-slider-->
+  </header><!--/#home-->
+  <div class="clear"></div>
+  <nav id="mainNav" class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div id="menuLogo" class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-capsule-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        </button>
+        <div class="homeLogoMenu">
+          <div class="homeLogoFirstMenu">
+            LOST
+          </div>
+          <div class="homeLogoCMenu">
+            C
+          </div>
+          <div class="homeLogoSecondMenu">
+            APSULE
+          </div>
+        </div>
+      </div>
+      <div class="MenuSlideText">
+         <div id="MenuSlideText1">
+           Just prepare your capsule and we will take care of it...
+         </div>
+         <div class="displayNone" id="MenuSlideText2">
+           Although, we will lose your capsule in the vast universe...
+         </div>
+         <div class="displayNone" id="MenuSlideText3">
+           but hey... we will do everything to find it for you when timer will close to 0...
+         </div>
+         <div class="displayNone" id="MenuSlideText4">
+           so just add whatever you like to your capsule and forget about it...
+         </div>
+         <div class="displayNone" id="MenuSlideText5">
+           We will notify you or the designated person when the time comes.
+         </div>
+      </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-capsule-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+              <a class="page-scroll" href="#capsule">Capsule</a>
+          </li>
+          <li>
+              <a class="page-scroll" href="#services">Services</a>
+          </li>
+          <li>
+              <a class="page-scroll" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+              <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+        <!-- /.navbar-collapse -->
+    </div>
+      <!-- /.container-fluid -->
+  </nav>
+  <div class="clear"></div>
+  <nav id="NavCapsuleLogo" class="navbar navbar-fixed-bottom navbar-light bg-faded">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="homeLogoMenu">
+          <div class="homeLogoFirstMenu">
+            LOST
+          </div>
+          <div class="homeLogoCMenu">
+            C
+          </div>
+          <div class="homeLogoSecondMenu">
+            APSULE
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="clear"></div>
+  <nav id="NavCapsuleInven" class="navbar navbar-right navbar-light bg-faded">
+    <div class="container-fluid">
+      <!-- Inventory of Capsule -->
+      <div class="NavCapsuleInvenName">
+        test
+      </div>
+    </div>
+  </nav>
+  <div class="clear"></div>
+  <section id="capsule">
+    <div class="container">
+      <div class="heading" id=capsule-main>
+        <form id="main-capsule-form" name="capsule-form" method="post" action="#">
+          <div class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <input id="capsule-form-name" class="form-control" type="text" maxlength="28" placeholder="Your Capsule name" required="required">
+              </div>
+            </div> 
+          </div>
+          <div class="row capsule-main-form text-center">
+            <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="capsule-icon">
+                <i class="fa fa-youtube-play fa-lg"></i>
+              </div>
+              <div class="capsule-yt">
+                <h3>To add your movie from YouTube:</h3>
+                <div>
+                  <a href="" class="btn btn-lg btn-primary" id="yt-button" data-toggle="modal" data-target="#capulseYTmodal">Click Me!</a>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="capulseYTmodal" tabindex="-1" role="dialog" aria-labelledby="modalYouTube" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title center" id="modalYouTube">To add your movie from YouTube just copy link to:</h4>
+                  </div>
+                  <div class="modal-body">
+                    <input id="capsule-form-yt" class="form-control" type="text" placeholder="Add Your YouTube link:">
+                    <div id="capsuleYTiframe"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button id="CloseYTButton" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <button id="PrevYTButton" type="button" class="btn btn-primary">Preview</button>
+                    <button id="AddYTButton" type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
+              <div class="capsule-icon">
+                <i class="fa fa-envelope-open-o fa-lg" aria-hidden="true"></i>
+              </div>
+              <div class="capsule-msg">
+                <h3>To write your letter, document, message:</h3>
+                <div>
+                  <a href="" class="btn btn-lg btn-primary" id="msg-button" data-toggle="modal" data-target="#capsuleMSGmodal">Click Me!</a>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="capsuleMSGmodal" tabindex="-1" role="dialog" aria-labelledby="modalMessage" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title center" id="modalMessage">If you want to use autocorrect just hold left ctrl and click right mouse on misspelled word.</h4>
+                  </div>
+                  <div class="modal-body">
+                    <textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button id="AddMsgButton" type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="capsule-icon">
+                <i class="fa fa-picture-o fa-lg" aria-hidden="true"></i>
+              </div>
+              <div class="capsule-img">
+                <h3>To add your photo-card for someone:</h3>
+                <div>
+                  <a href="" class="btn btn-lg btn-primary" id="yt-button" data-toggle="modal" data-target="#capulseIMGModal">Click Me!</a>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="capulseIMGModal" tabindex="-1" role="dialog" aria-labelledby="modalCard" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title center" id="modalCard">To add your card just choose wallpaper and add your text:</h4>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button id="AddCardButton" type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="capsule-icon">
+                <i class="fa fa-film fa-lg" aria-hidden="true"></i>
+              </div>
+              <div class="capsule-mov">
+                <h3>To add your own movie for someone:</h3>
+                <div>
+                  <label class="btn btn-default btn-file">
+                    Click Me!<input type="file" class="hidden">
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section><!--/#capsule-->
+  <section id="break" class="parallax">
+  </section><!--/#break-->
+
+  <section id="services">
+    <div class="container">
+      <div class="heading">
+        <div class="row">
+          <div class="text-center col-sm-8 col-sm-offset-2">
+            <h2>Our Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+          </div>
+        </div> 
+      </div>
+      <div class="text-center our-services">
+        <div class="row">
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="service-icon">
+              <i class="fa fa-flask"></i>
+            </div>
+            <div class="service-info">
+              <h3>Brand Identity</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
+            <div class="service-icon">
+              <i class="fa fa-umbrella"></i>
+            </div>
+            <div class="service-info">
+              <h3>Creative Idea</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
+            <div class="service-icon">
+              <i class="fa fa-cloud"></i>
+            </div>
+            <div class="service-info">
+              <h3>Awesome Support</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
+            <div class="service-icon">
+              <i class="fa fa-coffee"></i>
+            </div>
+            <div class="service-info">
+              <h3>Professional Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
+            <div class="service-icon">
+              <i class="fa fa-bitbucket"></i>
+            </div>
+            <div class="service-info">
+              <h3>App Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
+            <div class="service-icon">
+              <i class="fa fa-gift"></i>
+            </div>
+            <div class="service-info">
+              <h3>Clean Code</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/#services-->
+
+  <section id="features" class="parallax">
+    <div class="container">
+      <div class="row count">
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <i class="fa fa-user"></i>
+          <h3 class="timer">4000</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <i class="fa fa-desktop"></i>
+          <h3 class="timer">200</h3>                    
+          <p>Modern Websites</p>
+        </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="700ms">
+          <i class="fa fa-trophy"></i>
+          <h3 class="timer">10</h3>                    
+          <p>WINNING AWARDS</p>
+        </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="900ms">
+          <i class="fa fa-comment-o"></i>                    
+          <h3>24/7</h3>
+          <p>Fast Support</p>
+        </div>                 
+      </div>
+    </div>
+  </section><!--/#features-->
+
+  <section id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+          <h2>Pricing Table</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+        </div>
+      </div>
+      <div class="pricing-table">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <h3>Basic</h3>
+              <div class="price">
+                $9<span>/Month</span>                          
+              </div>
+              <ul>
+                <li>Free Setup</li>
+                <li>10GB Storage</li>
+                <li>100GB Bandwith</li>
+                <li>5 Products</li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-primary">Sign up</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
+              <h3>Standard</h3>
+              <div class="price">
+                $19<span>/Month</span>                                
+              </div>
+              <ul>
+                <li>Free Setup</li>
+                <li>10GB Storage</li>
+                <li>100GB Bandwith</li>
+                <li>5 Products</li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-primary">Sign up</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="single-table featured wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
+              <h3>Featured</h3>
+              <div class="price">
+                $29<span>/Month</span>                                
+              </div>
+              <ul>
+                <li>Free Setup</li>
+                <li>10GB Storage</li>
+                <li>100GB Bandwith</li>
+                <li>5 Products</li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-primary">Sign up</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
+              <h3>Professional</h3>
+              <div class="price">
+                $49<span>/Month</span>                    
+              </div>
+              <ul>
+                <li>Free Setup</li>
+                <li>10GB Storage</li>
+                <li>100GB Bandwith</li>
+                <li>5 Products</li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-primary">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/#pricing-->
+
+  <section id="contact">
+    <div id="contact-us" class="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+          </div>
+        </div>
+        <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="row">
+            <div class="col-sm-6">
+              <form id="main-contact-form" name="contact-form" method="post" action="#">
+                <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+                </div>
+                <div class="form-group">
+                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
+                </div>                        
+                <div class="form-group">
+                  <button type="submit" class="btn-submit">Send Now</button>
+                </div>
+              </form>   
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </section><!--/#contact-->
+  <footer id="footer">
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="center">
+          <div class="footer-logo">&copy; 2016 LostCapsule.</div>
+          <div class="social-icons">
+            <ul>
+              <li><a class="envelope" href="mailto:lostcapsule@gmail.com"><i class="fa fa-envelope"></i></a></li>
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="js/flipclock.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/jquery.countTo.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/ckeditor.js"></script>
+
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+
+</body>
+</html>
