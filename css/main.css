@@ -159,7 +159,9 @@ section {
   color: #666666;
   padding-bottom: 70px;
 }
-
+#mainNav {
+  display: block;
+}
 /*First Page Slider Text*/
 .slideText {
   opacity: 1;
@@ -177,9 +179,11 @@ section {
   right: 10px;
   bottom: 10px;
 }
+
 /*First Page Slider Text*/
 .MenuSlideText {
-  left: 30%;
+  width: 50%;
+  margin: 0;
   color: #666666;
 }
 .MenuSlideText > div {
@@ -200,6 +204,7 @@ section {
   font-weight: bold;
 }
 #home-form {
+  min-width: 254px !important;
   min-height: 54px;
   border-radius: 40px;
   box-shadow: none;
@@ -236,6 +241,10 @@ section {
 #capsule {
   min-height: 900px;
 }
+#capsule-form-name-main {
+  margin-top: -20px;
+  padding-bottom: 40px;
+}
 #capsule-form-name {
   display: block;
   float: right;
@@ -262,6 +271,19 @@ section {
   text-align: center;
   font-size: 16px;
 }
+.CapsuleIcon {
+  display: block;
+  background-image: url(../images/kap_otwa.png);
+  background-size: 50px 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  margin-top: -4px !important;
+}
+.CapsuleIconMath {
+  display: block;
+  margin-top: 4px !important;
+}
 .capsule-icon {
   border-radius: 10px;
   color: #fff;
@@ -274,24 +296,24 @@ section {
   -webkit-transition: background-color 0.1s ease;
   transition: background-color 0.1s ease;
 }
-
+.capsule-main-form .col-sm-4 h3 {
+  min-height: 60px;
+}
 .col-sm-4:hover .capsule-icon {
 }
-
 .capsule-main-form .col-sm-4 {
   border-right:1px solid #f2f2f2;
   border-bottom:1px solid #f2f2f2;
   padding-bottom: 50px;
 }
-
-.capsule-main-form .col-sm-4:nth-child(4), 
-.capsule-main-form .col-sm-4:nth-child(5), 
-.capsule-main-form .col-sm-4:nth-child(6) {
-  border-bottom:0;
-  padding-top: 60px;
+ .capsule-main-form .col-sm-4:nth-child(1) {
+  padding-bottom: 49px;
 }
-
-.capsule-main-form .col-sm-4:nth-child(3), 
+.capsule-main-form .col-sm-4:nth-child(7) {
+  border-bottom:0;
+  padding-top: 40px;
+}
+.capsule-main-form .col-sm-4:nth-child(5), 
 .capsule-main-form .col-sm-4:nth-child(6) {
   border-right:0;
 }
@@ -299,15 +321,17 @@ section {
 ********Logo*******
 **************************/
 .homeLogo {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  width: 310px;
   cursor: pointer;
   margin-top: -200px;
-  margin-left: 100px;
   padding-bottom: 100px;
   font-size: 44px;
   text-transform: uppercase;
 }
 .homeLogoFirst {
-  margin-left: -100px;
   display: inline-block;
 }
 .homeLogoC {
@@ -328,9 +352,7 @@ section {
 /*************************
 ********CapsuleInventory*******
 **************************/
-.NavCapsuleInvenName {
-  margin-top: 200px;
-}
+
 /*************************
 ********LogoMenu*******
 **************************/
@@ -585,6 +607,24 @@ section {
     margin-bottom: 0px;
   }
 }
+@media (max-width: 1460px) {
+  .MenuSlideText {
+    position: absolute;
+    display: none;
+    width: 740px;
+    margin-left: -100px !important;
+  }
+  #home-button {
+    width: 130px;
+    margin-top: 120px;
+    margin-left: -160px;
+  }
+  #home-form {
+    display: block;
+    margin-left: -100px;
+    width: 100%;
+  }
+}
 @media (max-width: 1000px) {
   .MenuSlideText {
     display: none;
@@ -605,20 +645,33 @@ section {
   }
   #home-button {
     width: 130px;
-    margin-top: 70px;
+    margin-top: 120px;
     margin-left: -60px;
   }
 }
 @media (max-width: 767px) {
-  .slideText, .time, .homeText, .MenuSlideText {
+/*  .slideText, .time, .homeText, .MenuSlideText {
     display: none;
-  }
+  }*/
   .homeLogo {
-    margin-top: -60px;
+    margin-top: -200px;
+  }
+  #home-form {
+    display: block;
+    margin-left: -80px;
+    min-width: 254px !important;
   }
   #home-button {
-    width: 100%;
-    margin-top: 110px;
+    width: 130px;
+    margin-left: 20px;
+  }
+  .capsule-main-form .col-sm-4 {
+    border-bottom:0;
+    padding-top: 0px;
+  }
+  .capsule-main-form .col-sm-4:nth-child(7) {
+    border-bottom:0;
+    margin-top: -50px !important;;
   }
 }
 /*************************
@@ -638,7 +691,8 @@ section {
 }
 
 .our-services .col-sm-4:hover .service-icon {
-  background-color: #333;
+  cursor: pointer;
+  background-color: #4E1BC2;
 }
 
 .our-services .col-sm-4 {

@@ -1,4 +1,10 @@
 jQuery(function($) {
+	//Next Capsule CountDown - Only for DEV purpose
+	var date = new Date;
+	var CapsuleYear = date.getFullYear();
+	var CapsuleMonth = date.getMonth()+1;
+	var CapsuleRandomDay = 1+Math.floor(Math.random()*30);
+	$nextCapsule = CapsuleYear+"/"+CapsuleMonth+"/"+CapsuleRandomDay;
 	// Get User Location
 	var userIP;
 	$.ajax({
@@ -144,7 +150,16 @@ jQuery(function($) {
 		}
 	});
 
- 	//Scroll Menu
+ 	//Scroll Check
+ 	var check = $(document).scrollTop();
+ 	if (check > 0) {
+		$('#NavCapsuleLogo').css({
+			'display':'none'
+		});
+	}
+ 	if (check > 1100) {
+		$('#mainNav').addClass('navbar-fixed-top');
+	}
 	$(window).on('scroll', function(){
 		if( $(window).scrollTop()> 48 ){
 			$('#NavCapsuleLogo').css({
@@ -197,8 +212,9 @@ jQuery(function($) {
 			contentTop.push( $( $(this).attr('href') ).offset().top);
 			contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
 		})
-		$.each( contentTop, function(i){
+		$.each(contentTop, function(i){
 			if ( winTop > contentTop[i] - rangeTop ){
+				alert(winTop > contentTop[i] - rangeTop);
 				$('.navbar-collapse li.scroll')
 				.removeClass('active')
 				.eq(i).addClass('active');			
@@ -304,7 +320,7 @@ jQuery(function($) {
 	//Time Function
 	var capsuleLast = ''; 	//LastCapsule - from database ?
 	if (capsuleLast === '') {
-	  $(".time").countdown("2017/01/30", function(event) {
+	  $(".time").countdown($nextCapsule, function(event) {
 	    $(".timeDay").html(
 	      event.strftime(
 	      	'%D<p>Days</p>'
